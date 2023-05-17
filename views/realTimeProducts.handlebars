@@ -1,0 +1,27 @@
+
+<nav class="navbar bg-body-tertiary" style="width:100vw ">
+  <div class="container-fluid" style="text-align: center; ">
+    <form class="" role="" onsubmit="return addProduct()" style="width:100vw">
+        <h2 style="font-family:sans-serif; ">Carga de nuevos productos</h2>
+      <input class="form-control me-2" type="text" placeholder="Titulo" aria-label="Search" id="title" style="margin:10px">
+      <input class="form-control me-2" type="text" placeholder="Descripcion" aria-label="Search" id="description" style="margin:10px">
+      <input class="form-control me-2" type="text" placeholder="Codigo" aria-label="Search" id="code" style="margin:10px">
+      <input class="form-control me-2" type="text" placeholder="Precio" aria-label="Search" id="price" style="margin:10px">
+      <input class="form-control me-2" type="text" placeholder="Stock" aria-label="Search" id="stock" style="margin:10px">
+       <input class="form-control me-2" type="text" placeholder="Categoria" aria-label="Search" id="category" style="margin:10px">
+      <button class="btn btn-outline-success" type="submit" style="margin: 10px;">Cargar Producto</button>
+    </form>
+  </div>
+</nav>
+<div id="estado" style="width:100vw; text-align: center"></div>
+
+<div class="container text-center" style="padding: 10px;">
+        <div class="row align-items-start" id="caja">
+        </div>
+</div>
+
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
+
